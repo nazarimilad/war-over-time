@@ -1,5 +1,3 @@
-<snippet>
-  <content><![CDATA[
 # ${1:War over time}
 ## Prerequisites
 * Perl
@@ -20,8 +18,9 @@
 3. Commit your changes: `git commit -am 'Add some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request
+## Positions
+* Syria: `lat = 34.8000; lng = 40.0000; zoom = 8;`
+* Raqqa: `lat = 36.1000; lng = 39.2000; zoom = 10;`
+* Mosul: `lat = 36.3500; lng = 43.2050; zoom = 13;`
 ## Note
-I made an extra script named `datastructure.pl` in the repository, which produces an complex datastructure of multi polygon coordinate data of the different groups. It can be used to make geographical and statistical calculations. 
-]]></content>
-  <tabTrigger>readme</tabTrigger>
-</snippet>
+I made an extra script named `datastructure.pl` in the repository, which produces an complex datastructure of multi polygon coordinate data of the different groups. It can be used to make geographical and statistical calculations.
