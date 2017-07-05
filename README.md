@@ -13,8 +13,8 @@
 3. run the script		         : `perl fetch_and_render.pl`
 4. convert the gif to a MP4 video:
 
-  4.1 convert the gif to a serie of PNG files      : `convert gifs/result.gif gifs/gif%05d.png`
-  4.2 convert the serie of PNG files to a MP4 video: `ffmpeg -r 7 -i gifs/gif%05d.png -y -an video.mp4`
+- convert the gif to a serie of PNG files      : `convert gifs/result.gif gifs/gif%05d.png`
+- convert the serie of PNG files to a MP4 video: `ffmpeg -r 7 -i gifs/gif%05d.png -y -an video.mp4`
 ## Positions
 * Syria: `lat = 34.8000; lng = 40.0000; zoom = 8 ;`
 * Raqqa: `lat = 36.1000; lng = 39.2000; zoom = 10;`
