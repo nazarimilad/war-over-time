@@ -17,8 +17,6 @@ $file =~ s/,"datats".*}/}/gsm;
 # delete map data from regions we dont need: Afghanistan, Libya, etc (only data from regios of Syria and Iraq will remain):
 $file =~ s/(.*?{"type_id":.*?}.*?{"type_id":.*?}.*?{"type_id":.*?}.*?{"type_id":.*?}.*?{"type_id":.*?}.*?{"type_id":.*?}).*?{"type_id":.*?}.*?{"type_id":.*?}.*?{"type_id":.*?}.*?{"type_id":.*?}.*?{"type_id":.*?}.*?{"type_id":.*?}(.*?{"type_id":.*?}).*]]}/$1$2/gsm;
 
-
-
 my %groups = ();			# hash which contains an array of groups
 my @groupNames = ("ISIS", 
 				  "Iraqi Government", 
@@ -51,8 +49,6 @@ while ($file =~ /"points":\[(\[.*?\])\]}/gsm) { 	# $1 contains the data of one g
 	$groups{$groupNames[$counter]} = [@regions];	# add this array of regions to the group
 	$counter++;
 }
-
-
 
 
 # Get an overview of the data extracted from $file and saved into %groups
